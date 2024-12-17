@@ -6,9 +6,6 @@
 
 ## **Содержание**
 - [Описание проекта](#описание-проекта)
-- [Структура проекта](#структура-проекта)
-- [Установка](#установка)
-- [Используемые модели](#используемые-модели)
 - [Параллельные вычисления](#параллельные-вычисления)
 - [Тестирование](#тестирование)
 - [Запуск проекта](#запуск-проекта)
@@ -30,25 +27,3 @@
 ---
 
 ## **Структура проекта**
-
-```plaintext
-parallel_tree_training/
-│
-├── models/                       # Реализация моделей
-│   ├── random_forest_model.py    # Модель Random Forest
-│   ├── gradient_boosting_model.py# Модель HistGradientBoosting
-│   └── lightgbm_model.py         # Модель LightGBM
-│
-├── utils/                        # Вспомогательные функции
-│   └── metrics.py                # Метрики для оценки качества
-│
-├── test/                         # Тесты с использованием pytest
-│   ├── test_random_forest.py
-│   ├── test_lightgbm.py
-│   ├── test_gradient_boosting.py
-│   ├── test_parallel_execution.py
-│   └── test_utils.py
-│
-├── main.py                       # Точка входа в проект
-├── requirements.txt              # Зависимости проекта
-└── README.md                     # Описание проекта
