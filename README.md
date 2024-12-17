@@ -117,4 +117,4 @@
 
 ### **Скринкаст эталонного решения своей практической работы**
 
-[Посмотреть скринкаст]([https://your-link-to-screencast.com](https://drive.google.com/file/d/1QlfYVuwbMRsERhhjTGXZyAe6hYnt9r5s/view?usp=sharing))
+[Посмотреть скринкаст]((https://drive.google.com/file/d/1QlfYVuwbMRsERhhjTGXZyAe6hYnt9r5s/view?usp=sharing))
