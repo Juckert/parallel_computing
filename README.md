@@ -26,3 +26,26 @@
 
 ---
 
+### **Параллельные вычисления**
+
+В проекте используются следующие механизмы для реализации параллельных вычислений:
+
+---
+
+#### **1. n_jobs в моделях**  
+- Параметр **`n_jobs`** используется в **RandomForestClassifier** и **LightGBM** для параллельного обучения деревьев решений.  
+- Автоматически распределяет задачи по доступным ядрам процессора.  
+- **Преимущества**: ускоряет обучение за счёт использования нескольких потоков или процессов.
+
+**Пример использования `n_jobs`**:
+```python
+from sklearn.ensemble import RandomForestClassifier
+from lightgbm import LGBMClassifier
+
+# Параллельное обучение RandomForest
+rf_model = RandomForestClassifier(n_estimators=100, n_jobs=-1)
+rf_model.fit(X_train, y_train)
+
+# Параллельное обучение LightGBM
+lgb_model = LGBMClassifier(n_estimators=100, n_jobs=-1)
+lgb_model.fit(X_train, y_train)
